@@ -1,0 +1,36 @@
+git software install
+Linux:
+  sudo apt-get install git
+  或者早期的版本 sudo apt-get install git-core
+  yum install git
+  或者 yum install git-core
+
+mac os x:
+  下载dmg包安装
+  通过homebrew开源软件包管理软件进行安装
+
+windows:
+  cygwin模拟环境下安装
+  msysgit
+  tortoisegit软件
+
+git configure
+git config --system user.name "username"
+git config --system user.mail "email address" 
+git config --global credential.helper cache
+
+--system for all user in linux(configure file in the /etc/gitconfig)
+--global for user all git repositories(configure file in the ~/.gitconfig)
+
+repository directory has a .git subdirectory, is stored git version information.
+.git/config file is standard a config for the repository
+
+git init #初始化一个git repository
+也可以直接 git init myrepository #表示在myrepository目录下新建一个repository
+
+git clone original_repository new_repository
+
+
+
+
+
